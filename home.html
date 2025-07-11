@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to DreamStay Hotel</title>
+  
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+      background: url(silhouette-palm-tree-with-umbrella.jpg)center;
+      
+      
+    }
+
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x900/?hotel,luxury') center/cover no-repeat;
+      height: 90vh;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      background-attachment: fixed;
+    }
+    .Head{
+      background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+      backdrop-filter: blur(5px); 
+      border-radius: 25px ;
+      padding: 2%;
+  /* font-family: 'Poppins', sans-serif; */
+    }
+    
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hero a {
+      padding: 12px 24px;
+      background-color: #ffcc00;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    
+
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .room-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+    }
+    .info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 60px 40px;
+  background-color: #fff;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  background: transparent;
+  text-align: center;
+  max-width: 300px;
+}
+
+.info-box .icon img {
+  height: 70px;
+  margin-bottom: 20px;
+  filter: grayscale(100%) brightness(0.7);
+}
+
+.info-box h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.info-box p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+    
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DreamStay Hotel</h1>
+    <nav>
+      <a href="#rooms"onclick="window.location.href='delexe.html'">Rooms</a>
+      <a href="#about us"onclick="window.location.href='aboutus.html'">About</a>
+      <a href="#contact" onclick="window.location.href='contactus.html'">Contact</a>
+      <a href="#Gallary" onclick="window.location.href='aboutus.html'">Gallary</a>
+      <a href="#book"onclick="window.location.href='delexe.html'" style="background: #ffcc00; color: #000; padding: 5px 10px; border-radius: 5px;">Book Now</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="Head">
+      <h2>Welcome To Hotel DreamStay</h2>
+      <p>Your relaxing escape at DreamStay Hotel</p>
+      
+    </div>
+  </section>
+
+  <div class="info-container">
+    <div class="info-box">
+      <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/235/235861.png" alt="Hotel Icon">
+      </div>
+      <h2>Fabulous Hotel</h2>
+      <p>
+        Hotel Kiyara is one of the stylish Luxury hotels in Kolhapur.  
+        It's located in the heart of the City. Nearly walkable distance  
+        from Mahalaxmi (Ambabai) Temple, Rankala Lake just 5 minutes on walking distance.
+      </p>
+    </div>
+  
+    <div class="info-box">
+      <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/235/235861.png" alt="Amenities Icon">
+      </div>
+      <h2>Amenities</h2>
+      <p>
+        24-hour front desk. Additional features include free Wi-Fi,  
+        car rental for sightseeing, spacious parking, hot/cold water,  
+        room service, restaurant, and doctor on call.
+      </p>
+    </div>
+  
+    <div class="info-box">
+      <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/235/235861.png" alt="Rooms Icon">
+      </div>
+      <h2>Luxury Rooms</h2>
+      <p>
+        21 luxurious rooms: Standard, Deluxe, Executive, 3 to 5 bed options.  
+        LED TV, cable channels, telephone, 24/7 hot & cold water,  
+        laundry services, and car washing available.
+      </p>
+    </div>
+  </div>
+  
+  
+
+  <section id="contact" class="section" style="background-color: #f5f5f5;">
+    <h3>Contact Us</h3>
+    <p>📍 Near Mahalaxami Mandir, Kolhapur</p>
+    <p>📞 +123 456 7890 | ✉️ contact@dreamstayhotel.com</p>
+  </section>
+
+  
+
+</body>
+</html>

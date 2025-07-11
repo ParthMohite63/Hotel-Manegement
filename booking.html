@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking Form</title>
+  <style>
+    body {
+      /* background: #5a2b0c; */
+      background-image: url('Bed.jpg');
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .booking-form {
+      /* background: #3b1d0a; */
+      background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+      backdrop-filter: blur(5px); 
+      padding: 30px;
+      border-radius: 10px;
+      color: white;
+      width: 400px;
+    }
+    .booking-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #f9a825;
+    }
+    .booking-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    .booking-form input, 
+    .booking-form select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+    }
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+    .row select {
+      flex: 1;
+    }
+    .booking-form button {
+      width: 100%;
+      background: #f9a825;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .booking-form button:hover {
+      background: #c17900;
+    }
+  </style>
+</head>
+<body >
+
+  <form class="booking-form">
+    <h2>BOOKING</h2>
+
+    <label>Name</label>
+    <input type="text" name="name" required>
+
+    <label>Mobile No</label>
+    <input type="tel" name="mobile" required>
+
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Select Room</label>
+    <select name="room" required>
+      <option value="">-------------</option>
+      <option value="deluxe">Deluxe Room</option>
+      <option value="executive">Executive</option>
+      <option value="standard">Standard Room</option>
+      <option value="Family room">Family Room</option>
+    </select>
+
+    <div class="row">
+      <div>
+        <label>Adults</label>
+        <select name="adults" required>
+          <option value="">--</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4+</option>
+        </select>
+      </div>
+      <div>
+        <label>Children</label>
+        <select name="children" required>
+          <option value="">--</option>
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3+</option>
+        </select>
+      </div>
+    </div>
+
+    <label>Check In Date</label>
+    <input type="date" name="checkin" required>
+
+    <label>Check Out Date</label>
+    <input type="date" name="checkout" required>
+
+    <button type="submit">Submit</button>
+  </form>
+  <script>
+    document.querySelector('.booking-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form from actually submitting
+      alert('Room booked'); // Show success message
+    });
+  </script>
+  
+
+</body>
+</html>

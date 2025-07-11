@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gallary</title>
+</head>
+<style>
+     .gallery {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .gallery h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .gallery-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 20px;
+  }
+  
+  .gallery-track {
+    display: inline-flex;
+  }
+  
+  .gallery-track img {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-track img:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 32px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    .gallery-track img {
+      height: 200px;
+      width: 280px;
+    }
+  }
+</style>
+<body>
+    <section class="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery-container">
+          <div class="gallery-track">
+            <img src="Grand Floridian Lobby🌼.jpg" alt="Hotel Lobby">
+            <img src="1e5b65f9-dd9a-4149-bb04-3925cbb9c999.jpg" alt="Luxury Room">
+            <img src="img/Bedroom Guest Room Five Star Hotel Background, Bedroom, Guest Room, Hotel Background Image And Wallpaper for Free Download.jpg" alt="Restaurant">
+            <img src="img/Shangri-La Hotel Singapore Swimming Pool.jpg" alt="Spa Area">
+            <img src="img/efacfb10-0968-4c19-91e5-da705404654f.jpg" alt="Rooftop View">
+          </div>
+        </div>
+      </section>
+</body>
+</html>
